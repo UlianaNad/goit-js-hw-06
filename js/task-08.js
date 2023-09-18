@@ -15,7 +15,11 @@ refs.form.addEventListener('submit', (ev) => {
             email:emailValue,
             password: passwordValue,
         }
+
         console.log(user);
+        
+        refs.form.reset();
+        
     } else {
         alert("Fill all fields!")
     }
