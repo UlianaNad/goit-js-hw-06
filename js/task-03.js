@@ -21,9 +21,8 @@ const images = [
 const galleryElem = document.querySelector(".gallery");
 
 const imgList = images.map((img) => {
-  let html = `<li>
+  return `<li>
     <img class="picture" src="${img.url}" alt="${img.alt}">
   </li>`;
-  return html;
 });
-galleryElem.insertAdjacentHTML("afterBegin", imgList);
+galleryElem.insertAdjacentHTML("afterBegin", imgList.join(""));
